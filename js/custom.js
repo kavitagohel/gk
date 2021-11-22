@@ -69,7 +69,7 @@ $(document).ready(function(){
 	$(window).on('scroll',function(){
 		var header_height = $("header").innerHeight();
 		var top = $(window).scrollTop();
-		console.log(top)
+		// console.log(top)
 		if(top >= header_height){
 			$('header').addClass('scrollnav');
 			$('section').eq(0).addClass('m_b').end();

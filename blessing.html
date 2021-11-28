@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Blessings - Gurutattva Portal</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+        </script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" integrity="sha384-oB+zNShLpBI6ELFbNsVyEqcS4N9XQjY+RyoPWakU/zyXhAm2xd2UoqGeRnwfeamA" crossorigin="anonymous" />
+    <style>
+        .form-text {
+            font-style: italic;
+            color: darkgoldenrod !important;
+        }
+
+        .pac-container:after {
+            content: none !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="post" autocomplete="off" action="/Identity/Account/Register">
+                        <h4> Application for Blessings from P. Swamiji for Marriage/Engagement</h4>
+                        <hr />
+                  
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_Bride_Name">Name of bride</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Bride Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Bride Name&#x27; must not be empty." id="Input_Bride_Name" name="Input.BrideName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BrideName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_bMother_Name">Mother name</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Mother Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Mother Name&#x27; must not be empty." id="Input_bMother_Name" name="Input.bMotherName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.bMotherName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_bFather_Name">Father name</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Father Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Father Name&#x27; must not be empty." id="Input_bFather_Name" name="Input.bFatherName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.bFatherName" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_BPhoneNumber">Any parent Contact number</label>
+                                <input class="form-control" onkeypress="return isNumber(event)" type="text" data-val="true" data-val-required="&#x27;Phone Number&#x27; must not be empty." id="Input_BPhoneNumber" name="Input.BPhoneNumber" value="" />
+                                <small class="form-text text-muted">Write without country code or any other symbol.</small>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BPhoneNumber" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="Input_BAddress">Address</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length-min="1" data-val-required="&#x27;Address&#x27; must not be empty." id="Input_BAddress" name="Input.BAddress" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BAddress" data-valmsg-replace="true"></span>
+                           </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_BCenterName">Center name</label>
+                                <input class="form-control" autocomplete="off" type="text" id="Input_BCenterName" name="Input.BCenterName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BCenterName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_BAcharyaName">Acharya name</label>
+                                <input class="form-control" autocomplete="off" type="text" id="Input_BAcharyaName" name="Input.BAcharyaName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BAcharyaName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_BA_PhoneNumber">Acharya contact number</label>
+                                <input class="form-control" onkeypress="return isNumber(event)" type="text" data-val="true" id="Input_BA_PhoneNumber" name="Input.BAPhoneNumber" value="" />
+                                <small class="form-text text-muted">Write without country code or any other symbol.</small>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.BAPhoneNumber" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_FirstName">Name of groom</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Groom Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Groom Name&#x27; must not be empty." id="Input_Groom_Name" name="Input.GroomName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GroomName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                               <label for="Input_gMother_Name">Mother name</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Mother Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Mother Name&#x27; must not be empty." id="Input_gMother_Name" name="Input.gMotherName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.gMotherName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_gFather_Name">Father name</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length="&#x27;Father Name&#x27; must be between 1 and 50 characters." data-val-length-max="50" data-val-length-min="1" data-val-regex="Only alphabets allowed" data-val-regex-pattern="^[\sa-zA-Z&#xE4;&#xF6;&#xFC;&#xC4;&#xD6;&#xDC;&#xDF;]&#x2B;$" data-val-required="&#x27;Father Name&#x27; must not be empty." id="Input_gFather_Name" name="Input.gFatherName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.gFatherName" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_GPhoneNumber">Any parent contact number</label>
+                                <input class="form-control" onkeypress="return isNumber(event)" type="text" data-val="true" data-val-required="&#x27;Phone Number&#x27; must not be empty." id="Input_GPhoneNumber" name="Input.GPhoneNumber" value="" />
+                                <small class="form-text text-muted">Write without country code or any other symbol.</small>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GPhoneNumber" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="Input_GAddress">Address</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length-min="1" data-val-required="&#x27;Address&#x27; must not be empty." id="Input_GAddress" name="Input.BAddress" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GAddress" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_GCenterName">Center name</label>
+                                <input class="form-control" autocomplete="off" type="text" id="Input_GCenterName" name="Input.GCenterName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GCenterName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_GAcharyaName">Acharya name</label>
+                                <input class="form-control" autocomplete="off" type="text" id="Input_GAcharyaName" name="Input.GAcharyaName" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GAcharyaName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_GA_PhoneNumber">Acharya contact number</label>
+                                <input class="form-control" onkeypress="return isNumber(event)" type="text" data-val="true" id="Input_GA_PhoneNumber" name="Input.GAPhoneNumber" value="" />
+                                <small class="form-text text-muted">Write without country code or any other symbol.</small>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.GAPhoneNumber" data-valmsg-replace="true"></span>
+                            </div>          
+                        </div>
+
+                        <hr/>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_Date">Date of wedding or engagement</label>
+                                <input type="text" class="form-control" placeholder="dd/mm/yyyy" autocomplete="off" data-val="true" data-val-required="&#x27;Date&#x27; must not be empty." id="Input_Date" name="Input.Date" value="" />
+                                <small class="form-text text-muted">Write in DATE-MONTH-YEAR format, e.g. 01/01/2000</small>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Date" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_Time">Time of event</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true" data-val-length-min="1" id="Input_Time" name="Input.Time" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Time" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Input_EAddress">Address of event</label>
+                                <input class="form-control" autocomplete="off" type="text" data-val="true"  data-val-length-min="1" id="Input_EAddress" name="Input.EAddress" value="" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.EAddress" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="Input_File">Upload a scan copy of invitation if printed</label>
+                            </div>  
+                            <div class="form-group col-md-8">
+                                <input type="file" name="filename" id="Input_File">
+                            </div>                
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Apply</button>
+                        <a href="" class="btn btn-primary">Cancel</a>
+                       
+
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Shree Shivkrupanand Swami Foundation
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js" crossorigin="anonymous" integrity="sha384-rZfj/ogBloos6wzLGpPkkOr/gpkBNLZ6b6yLy4o+ok+t/SAKlL5mvXLr0OXNi1Hp">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.9/jquery.validate.unobtrusive.min.js" crossorigin="anonymous" integrity="sha384-ifv0TYDWxBHzvAk2Z0n8R434FL1Rlv/Av18DXE43N/1rvHyOG4izKst0f2iSLdds">
+    </script>
+
+    <script>
+         function isNumber(evt) {
+                    evt = (evt) ? evt : window.event;
+                    var charCode = (evt.which) ? evt.which : evt.keyCode;
+                    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                        return false;
+                    }
+                    return true;
+                }
+    </script>
+
+</body>
